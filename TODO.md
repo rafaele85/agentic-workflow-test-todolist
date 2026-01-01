@@ -22,12 +22,12 @@ Full-stack Todo list application with React frontend and Fastify backend, using 
 - [x] Set up gitflow: create develop branch from main
 
 ### 1.2 Backend Workspace Setup
-- [ ] Create `packages/backend/` directory
-- [ ] Initialize backend package.json with Fastify and TypeScript dependencies
-- [ ] Create basic TypeScript configuration (tsconfig.json)
-- [ ] Create minimal Fastify server entry point (src/index.ts)
-- [ ] Add start script to run server locally
-- [ ] Commit: "feat: initialize backend workspace"
+- [x] Create `packages/backend/` directory
+- [x] Initialize backend package.json with Fastify and TypeScript dependencies
+- [x] Create basic TypeScript configuration (tsconfig.json)
+- [x] Create minimal Fastify server entry point (src/index.ts)
+- [x] Add start script to run server locally
+- [x] Commit: "feat: initialize backend workspace"
 
 ### 1.3 Frontend Workspace Setup
 - [ ] Create `packages/frontend/` directory
