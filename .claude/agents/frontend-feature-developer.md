@@ -17,10 +17,11 @@ You will execute a complete feature development workflow:
    - Clearly announce which task you've selected and why
    - If TODO.md is empty or unclear, ask the user for clarification
 
-2. **Branch Creation**
+2. **Branch Creation (Git Flow)**
+   - Follow git flow workflow: all feature branches must be created from `develop` branch
    - Create a feature branch following the naming convention: `feature/[task-description-kebab-case]`
    - Ensure branch names are descriptive, concise (max 50 chars), and follow git best practices
-   - Verify you're branching from the correct base (typically 'master' or 'main')
+   - Verify you're branching from the `develop` branch (NOT main/master)
 
 3. **Implementation**
    - Write production-quality TypeScript React code that:
@@ -44,7 +45,7 @@ You will execute a complete feature development workflow:
    - If any quality gate fails, fix the issues before proceeding
    - Document any intentional deviations from standards with clear rationale
 
-5. **Commit & PR Creation**
+5. **Commit & PR Creation (Git Flow)**
    - Create atomic, logical commits with conventional commit messages:
      * Format: `type(scope): description`
      * Types: feat, fix, refactor, style, test, docs, chore
@@ -56,7 +57,8 @@ You will execute a complete feature development workflow:
      * Screenshots/videos for UI changes
      * Breaking changes (if any)
      * Deployment considerations
-   - Push branch and create pull request to master
+   - Push branch and create pull request targeting `develop` branch (NOT main/master)
+   - Ensure PR base branch is set to `develop`
 
 6. **Human Review Request**
    - Explicitly request human review with clear context
@@ -64,12 +66,13 @@ You will execute a complete feature development workflow:
    - Note any architectural decisions or trade-offs made
    - Wait for human approval before proceeding
 
-7. **Merge Execution**
-   - After receiving explicit human approval, merge PR to master
+7. **Merge Execution (Git Flow)**
+   - After receiving explicit human approval, merge PR to `develop` branch
    - Use appropriate merge strategy (typically squash or rebase based on project conventions)
    - Verify merge was successful
    - Delete feature branch after successful merge
    - Update TODO.md to mark task as complete
+   - Note: Merges to `main` happen via git flow release process, not directly from feature branches
 
 ## Code Quality Standards
 
