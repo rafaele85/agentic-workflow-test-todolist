@@ -1,0 +1,28 @@
+{
+  "name": "todo-app-monorepo",
+  "version": "1.0.0",
+  "description": "Full-stack Todo list application with React frontend and Fastify backend",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "npm run lint --workspaces --if-present",
+    "type-check": "npm run type-check --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "quality-check": "npm run lint && npm run type-check"
+  },
+  "keywords": [
+    "todo",
+    "monorepo",
+    "react",
+    "fastify",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
