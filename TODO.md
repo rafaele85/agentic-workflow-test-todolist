@@ -15,11 +15,11 @@ Full-stack Todo list application with React frontend and Fastify backend, using 
 ## Phase 1: Project Foundation
 
 ### 1.1 Monorepo Setup
-- [ ] Initialize git repository with main branch
-- [ ] Create root package.json with NPM workspaces configuration
-- [ ] Create `packages/` directory structure
-- [ ] Create `.gitignore` for node_modules, build artifacts, and data files
-- [ ] Set up gitflow: create develop branch from main
+- [x] Initialize git repository with main branch
+- [x] Create root package.json with NPM workspaces configuration
+- [x] Create `packages/` directory structure
+- [x] Create `.gitignore` for node_modules, build artifacts, and data files
+- [x] Set up gitflow: create develop branch from main
 
 ### 1.2 Backend Workspace Setup
 - [ ] Create `packages/backend/` directory
